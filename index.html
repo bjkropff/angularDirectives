@@ -12,10 +12,25 @@
         <div my-greeting="" message="YOu have reached your DOOOOOOOMMMM!!!">
         </div>
         <phuz enter></phuz>
+        <phuz damage="welcome.dealDamage(ability)"></phuz>
         <div fireball="background">
             (Shoot fireball)
         </div>
         <meatball leave></meatball>
+        <div spyro></div>
+
+    </div>
+
+    <div ng-controller="InventoryCtrl as inventoryCtrl">
+        <inventory add="inventoryCtrl.logItem(item)"></inventory>
+        <inventory add=""></inventory>
+
+    </div>
+
+    <div ng-controller="EnemyCtrl as enemyCtrl">
+        <enemy add="enemyCtrl.logEnemy()"></enemy>
+
+
     </div>
     </body>
 </html>
