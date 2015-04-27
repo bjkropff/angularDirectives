@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="phoneApp">
     <head>
-        <title></title>
+        <meta charset="utf-8">
+        <title>Phone App</title>
+        <script src="js/angular.js"></script>
+        <script src="js/app.js"></script>
     </head>
     <body>
-
+        <div ng-controller="AppCtrl as appctrl">
+            <div phone dial="appctrl.callHome(message)"></div>
+        </div>
     </body>
 </html>
