@@ -1,3 +1,10 @@
 .panel {
     font-size: 26px;
 }
+
+.background {
+    background: url('http://static1.squarespace.com/static/5433bc27e4b0ebdd51035256/54ef902ce4b0ecdde027a529/54ef903fe4b0ecdde027a5aa/1425825441541/?format=1000w') no-repeat;
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+}

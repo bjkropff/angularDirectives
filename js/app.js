@@ -6,6 +6,16 @@ app.controller('HeroesCtrl', function() {
     welcome.message = "Hello, Mighty Warriors!";
 });
 
+app.directive("fireball", function() {
+    return function(scope, element, attrs) {
+        element.bind("mouseenter", function() {
+            element.addClass(attrs.fireball);
+        });
+    };
+});
+
+
+
 app.directive("enter", function() {
     return function(scope, element) {
         element.bind("mouseenter", function() {
