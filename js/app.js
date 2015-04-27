@@ -14,6 +14,13 @@ app.directive("fireball", function() {
     };
 });
 
+app.directive("fireball", function() {
+    return function(scope, element, attrs) {
+        element.bind("mouseleave", function() {
+            element.removeClass(attrs.fireball);
+        });
+    };
+});
 
 
 app.directive("enter", function() {
